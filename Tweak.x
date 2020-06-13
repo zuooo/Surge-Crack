@@ -1,12 +1,6 @@
-%hook SGUPro
-- (bool)isProActive {
-
-	return 1;
+#include <substrate.h>
+%hook SGUEnterprise
+-(bool)isActive {
+	return true;
 }
-- (bool)isFeatureUnlocked:(id)a3 {
-
-	return 1;
-}
-
-
 %end
